@@ -1,0 +1,32 @@
+  {{#each erros}}
+  <div class="alert alert-danger">{{texto}}</div>
+  {{else}}
+  {{/each}}
+  
+    <div class="container card">
+        <div class="card-body">
+                  <h2>Sig-In</h2><hr>
+
+<form action="" method="POST">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nome: </label>
+    <input type="text" class="form-control" name="nome" aria-describedby="nome" required>
+ </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email:</label>
+    <input type="email" class="form-control" name="email" aria-describedby="email" required>
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Senha:</label>
+    <input type="password" class="form-control" name="senha" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Repita sua senha:</label>
+    <input type="password" class="form-control" name="senha2" required>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-outline-primary">Criar Conta</button>
+</form>
+    </div>
+</div>

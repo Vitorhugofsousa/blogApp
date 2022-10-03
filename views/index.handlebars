@@ -1,0 +1,32 @@
+<div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Bem vindo ao J.App!</h1>
+        <p class="col-md-8 fs-4">Esse site foi desenvolvido com javaScript e Handlebars com o objetivo de aprender sobre essas tecnologias. <br> Cadastre-se para ter acesso a todas as funcionalidades.</p>
+        <a href=""><button class="btn btn-primary btn-lg" type="button">Cadastre-se</button></a>
+      </div>
+    </div>
+
+    <hr>
+    <h2>
+        Postagens Recentes:
+    </h2>
+
+    {{#each postagens}}
+
+<div class="card mt-4">
+    <div class="card-body">
+        <h4>{{titulo}}</h4><br>
+
+        <p>{{descricao}}</p><br>
+        
+        <a href="/postagem/{{slug}}"><button class="btn btn-success">Leia Mais</button></a><hr>
+        
+        <small>Data de criação: {{data}}</small> <br>
+
+    </div>
+</div>
+     {{else}}
+     <div class="card">
+     <h4>Nenhuma Postagem Registrada!</h4>
+     </div>
+     {{/each}}

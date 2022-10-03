@@ -1,0 +1,14 @@
+
+{{#each categorias}}
+<div class="container">
+<div class="card card-body">
+    <h3>{{nome}}</h3><hr>
+    <a href="/categorias/{{slug}}"><button class="btn btn-outline-success">Ver Posts Nessa categoria</button></a>
+</div>
+<br>
+</div>
+{{else}}
+<div class="card-body">
+    <h3>Não há categorias registradas.</h3>
+</div>
+{{/each}}

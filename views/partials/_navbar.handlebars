@@ -1,0 +1,29 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid mt-4">
+    <a class="navbar-brand " href="/">J.app</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link" href="/categorias">Categorias</a>
+        </li>
+        {{#if user}}
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="/admin/">Home</a>
+        </li>
+
+        <li class="nav-item ">
+          <a href="/usuarios/logout" class="nav-link link-danger ">Logout</a>
+        </li>
+{{else}}
+        <li class="nav-item">
+          <a href="/usuarios/login" class="nav-link ">Log-In</a>
+        </li>
+        <li class="nav-item">
+          <a href="/usuarios/sigin" class="nav-link ">Sig-In</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

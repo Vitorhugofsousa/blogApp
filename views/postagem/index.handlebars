@@ -1,0 +1,14 @@
+ {{#each postagens}}
+<div class="container card-body mt-3">
+    <h1>{{titulo}}</h1>
+    <small>Data de publicação: {{data}}</small>
+    <hr>
+    <p>{{conteudo}}</p>
+
+</div>
+
+{{else}}
+
+<div class="container card card-body bg-danger"><h3>Erro Ao Carregar Conteúdo!</h3>
+</div>
+{{/each}}
